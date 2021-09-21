@@ -1,0 +1,129 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merienda&family=Montserrat+Alternates&display=swap"
+        rel="stylesheet">
+    <title>Leia Laaksonen</title>
+</head>
+
+<body>
+    <div class="background"></div>
+
+    <header>
+        <ul class="site-nav-list group">
+            <li class="sprite-home"><a href="index.html">Kotisivu</a></li>
+            <li class="sprite-hobby"><a href="hobbies.html">Harrastukset</a></li>
+        </ul>
+        <ul class="sprite-list group">
+            <li class="sprite-twitter"><a href="https://www.twitter.com/LeiaMaaria" target="_blank">Twitter</a></li>
+            <li class="sprite-ig"><a href="https://www.instagram.com/leia.maaria/" target="_blank">IG</a></li>
+            <li class="sprite-linked"><a href="https://www.linkedin.com/in/leia-laaksonen/" target="_blank">Linked</a>
+            </li>
+        </ul>
+    </header>
+
+    <div id="navbar">
+        <p>Tähän linkkejä jne</p>
+    </div>
+
+    <div id="profile-pic">
+        <img src="images/profilepic.jpg" alt="profilepic">
+        <h1>Leia Laaksonen</h1>
+        <h2>Tietojenkäsittelyn tradenomi</h2>
+    </div>
+
+    <div class="kortti" id="intro-card">
+        <h1>Esittely</h1>
+        <div class="diagonal-white-box">
+            <div class="diagonal-box-content">
+                <p>Hei!</p>
+                <p>
+                    Olen Tamperelainen tietojenkäsittelijä, joka etsii paikkaansa
+                    ICT-alan jännittävässä maailmassa. Tietokoneet ovat olleet osa
+                    elämääni aina lapsesta saakka ja niiden parissa on tullut näperrettyä
+                    milloin missäkin puuhissa.
+                </p>
+                <p>
+                    Vuosien varrella kokemusta on karttunut muun muassa ohjelmoinnista, grafiikan tuottamisesta
+                    ja käytettävyyden suunnittelusta. Monipuolisten harrastusten parissa olen saanut paljon
+                    kokemusta tiimitöistä ja päässyt toteuttamaan itseäni erilaisten luovien töiden muodossa.
+                    Olen optimistinen, ystävällinen ja innokas oppimaan uutta!
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="kortti" id="work-card">
+        <h1>Työkokemus</h1>
+        <div class="diagonal-white-box">
+            <div class="diagonal-box-content">
+                <p>Sisältöä liiba laaba
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt, architecto. Molestiae, iusto! Sapiente laborum eveniet
+                    ex explicabo nostrum, eos harum nihil quo dicta hic accusamus
+                    voluptatem praesentium? Perferendis, quis aperiam?
+                </p>
+                <p>Sisältöä liiba laaba
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt, architecto. Molestiae, iusto! Sapiente laborum eveniet
+                    ex explicabo nostrum, eos harum nihil quo dicta hic accusamus
+                    voluptatem praesentium? Perferendis, quis aperiam?
+                </p>
+            </div>
+        </div>
+        <div class="image-container">
+            <div class="image">
+                <img src="images/ensiapulaukku.png">
+            </div>
+            <div class="image">
+                <img src="images/poistumistie.png">
+            </div>
+            <div class="image">
+                <img src="images/sammutuspeite.png">
+            </div>
+        </div>
+
+    </div>
+    <div class="kortti" id="studies-card">
+        <h1>Koulutus</h1>
+        <div class="diagonal-white-box">
+            <div class="diagonal-box-content">
+                <p>Sisältöä liiba laaba
+                    <br>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Incidunt, architecto. Molestiae, iusto! Sapiente laborum eveniet
+                    ex explicabo nostrum, eos harum nihil quo dicta hic accusamus
+                    voluptatem praesentium? Perferendis, quis aperiam?
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; Leia Laaksonen 2021</p>
+    </footer>
+
+    <script>
+        // When the user scrolls down 20px from the top of the document, slide down the navbar
+        window.onscroll = function () { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-51px";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
