@@ -39,7 +39,7 @@ header .site-nav-list a {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(../Portfolio/images/nav-sprites.svg);
+  background-image: url(images/nav-sprites.svg);
   text-indent: -9999px;
 }
 header .sprite-home a:hover {
@@ -65,7 +65,7 @@ header .sprite-list a {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(../Portfolio/images/small-sprites.svg);
+  background-image: url(/images/small-sprites.svg);
   text-indent: -9999px;
 }
 header .sprite-linked a:hover {
