@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background-image: url(../images/IMG_0283_signature.png);
+  background-image: url(../Portfolio/images/IMG_0283_signature.png);
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
@@ -39,7 +39,7 @@ header .site-nav-list a {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(../images/nav-sprites.svg);
+  background-image: url(../Portfolio/images/nav-sprites.svg);
   text-indent: -9999px;
 }
 header .sprite-home a:hover {
@@ -65,7 +65,7 @@ header .sprite-list a {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url(../images/small-sprites.svg);
+  background-image: url(../Portfolio/images/small-sprites.svg);
   text-indent: -9999px;
 }
 header .sprite-linked a:hover {
@@ -119,73 +119,85 @@ header .sprite-twitter a:hover {
   box-shadow: 0 0 10px black;
 }
 
-.kortti {
-  width: 65em;
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.flex-container .card {
   background-color: rgba(245, 240, 237, 0.5);
-  border-radius: 25px;
-  margin: auto;
-  margin-bottom: 4em;
-  box-sizing: border-box;
+  border-radius: 20px;
   box-shadow: 0 0 10px black;
-  overflow: hidden;
   backdrop-filter: url(commonfilters.svg#filter);
   backdrop-filter: blur(2px);
-}
-.kortti #intro-card {
-  height: 900px;
-}
-.kortti #work-card {
-  height: 1000px;
-}
-.kortti #studies-card {
-  height: 1000px;
-}
-.kortti h1 {
-  position: relative;
-  top: 1em;
   text-align: center;
-  font-size: 2.2em;
-  color: #F5F0ED;
-  text-shadow: 0 0 2px black, 0 0 7px black;
+  margin-bottom: 3em;
+  overflow: hidden;
 }
-.kortti .diagonal-white-box {
+.flex-container .card .diagonal-box {
   position: relative;
-  top: 7em;
+  top: 6em;
   background-color: #F5F0ED;
-  height: 50%;
-  margin: 0;
-  transform: skewY(-6deg);
+  transform: skewY(-4deg);
+  z-index: -1;
 }
-.kortti .diagonal-white-box .diagonal-box-content {
-  transform: skewY(6deg);
+.flex-container .card .diagonal-box h1, .flex-container .card .diagonal-box p {
+  transform: skewY(4deg);
   position: relative;
-  top: 4em;
-  left: 2em;
-  padding-right: 4em;
-  text-align: center;
-  font-size: 1.3em;
+}
+.flex-container .card .diagonal-box h1 {
+  top: -3em;
+  color: white;
+  text-shadow: 0 0 2px black, 0 0 7px black;
+  font-size: 2.5em;
+  padding: 1em 0 1em 0;
+}
+.flex-container .card .diagonal-box p {
+  top: -6em;
   color: #2D371E;
+  font-size: 1.3em;
+  padding: 2em 2em 1em 2em;
+}
+
+#work-card p {
+  margin-bottom: 0;
+  padding: 2em 2em 0 2em;
 }
 
 .image-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 13em;
-  margin-bottom: 2em;
-  margin-left: 2em;
-}
-.image-container .image {
-  flex: 33%;
+  padding: 5em 2em 2em 2em;
+  margin-top: 5em;
 }
 .image-container img {
-  width: 90%;
-  height: 18em;
-  object-fit: cover;
+  width: 30%;
   border-radius: 10px;
-  border: 1px solid #F5F0ED;
-  box-shadow: 0 0 7px #000;
+  border: 3px solid #F5F0ED;
+  box-shadow: 0 0 7px black;
 }
 
+@media screen and (min-width: 1040px) {
+  .card {
+    width: 65em;
+  }
+}
+@media screen and (max-width: 1039px) {
+  .card {
+    width: 90%;
+  }
+
+  .image-container {
+    flex-direction: column;
+    align-items: center;
+    padding: 3em 0 2em 0;
+  }
+  .image-container img {
+    width: 85%;
+    max-width: 500px;
+    margin-top: 1em;
+  }
+}
 footer {
   text-align: center;
   color: white;
