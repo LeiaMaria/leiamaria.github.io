@@ -183,6 +183,10 @@ header .sprite-twitter a:hover {
   }
 }
 @media screen and (max-width: 1039px) {
+  .body {
+    background-image: url(../images/IMG_0283_signature_smaller.jpg);
+  }
+
   .card {
     width: 90%;
   }
