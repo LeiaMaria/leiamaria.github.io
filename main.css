@@ -3,18 +3,27 @@ html, body {
   padding: 0;
 }
 
-body {
-  background-image: url(../images/IMG_0283_signature.png);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-}
 body h1, body h2, body h3 {
   font-family: "Merienda", cursive;
 }
 body p {
   font-family: "Montserrat Alternates", sans-serif;
+}
+
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background: url(../images/IMG_0283_signature_smaller.jpg) no-repeat center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 header {
