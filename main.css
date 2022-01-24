@@ -105,6 +105,28 @@ header .sprite-twitter a:hover {
   z-index: 2;
   box-sizing: border-box;
 }
+#navbar p {
+  float: right;
+  color: #F5F0ED;
+  margin-right: 8px;
+}
+
+#scrollToTop {
+  background-color: #4B6333;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 5px 10px 0 0;
+  float: right;
+  background-image: url(../images/scroll-sprites.svg);
+  box-shadow: 3px 2px 5px #2D371E;
+  border-radius: 50%;
+}
+
+#scrollToTop:hover {
+  background-position: -40px 0;
+}
 
 #profile-pic {
   position: relative;

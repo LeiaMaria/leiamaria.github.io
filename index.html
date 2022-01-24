@@ -30,7 +30,9 @@
     </header>
 
     <div id="navbar">
-        <p>Tähän linkkejä jne</p>
+        <button id="scrollToTop">
+        </button>
+        <p>Palaa ylös</p>
     </div>
 
     <div id="profile-pic">
@@ -147,6 +149,15 @@
                 document.getElementById("navbar").style.top = "-51px";
             }
         }
+        const scrollToTop = document.querySelector("#scrollToTop");
+
+        scrollToTop.addEventListener("click", function () {
+            window.scrollTo({
+                left: 0,
+                top: 0,
+                behavior: "smooth"
+            });
+        });
     </script>
 
 </body>

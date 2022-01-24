@@ -96,6 +96,28 @@ header .sprite-twitter a:hover {
   z-index: 2;
   box-sizing: border-box;
 }
+#navbar p {
+  float: right;
+  color: #F5F0ED;
+  margin-right: 8px;
+}
+
+#scrollToTop {
+  background-color: #4B6333;
+  border: none;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  margin: 5px 10px 0 0;
+  float: right;
+  background-image: url(../images/scroll-sprites.svg);
+  box-shadow: 3px 2px 5px #2D371E;
+  border-radius: 50%;
+}
+
+#scrollToTop:hover {
+  background-position: -40px 0;
+}
 
 #profile-pic {
   position: relative;
@@ -149,7 +171,6 @@ header .sprite-twitter a:hover {
   top: -3em;
   color: white;
   text-shadow: 0 0 2px black, 0 0 7px black;
-  font-size: 2.5em;
   padding: 1em 0 1em 0;
 }
 .flex-container .card .diagonal-box p {
@@ -182,6 +203,9 @@ header .sprite-twitter a:hover {
   .card {
     width: 65em;
   }
+  .card h1 {
+    font-size: 2.5em;
+  }
 }
 @media screen and (max-width: 1039px) {
   .body {
@@ -190,6 +214,12 @@ header .sprite-twitter a:hover {
 
   .card {
     width: 90%;
+  }
+  .card h1 {
+    font-size: 2em;
+  }
+  .card p {
+    padding: 0;
   }
 }
 footer {
