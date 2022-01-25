@@ -115,10 +115,11 @@ header .sprite-twitter a:hover {
   border-radius: 50%;
 }
 
-#scrollToTop:hover {
-  background-position: -40px 0;
+@media (hover: hover) {
+  #scrollToTop:hover {
+    background-position: -40px 0;
+  }
 }
-
 #profile-pic {
   position: relative;
   margin-bottom: 10em;
