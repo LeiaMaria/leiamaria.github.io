@@ -181,6 +181,12 @@ header .sprite-twitter a:hover {
   padding: 2em 2em 1em 2em;
 }
 
+#syntaksi {
+  width: 100%;
+  position: relative;
+  top: -20px;
+}
+
 .image-container {
   display: flex;
   justify-content: space-between;
@@ -207,6 +213,14 @@ header .sprite-twitter a:hover {
   .card h1 {
     font-size: 2.5em;
   }
+  .card #volunteer-text {
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+
+  #syntaksi-solo {
+    display: none;
+  }
 }
 @media screen and (max-width: 1039px) {
   .body {
@@ -215,12 +229,26 @@ header .sprite-twitter a:hover {
 
   .card {
     width: 90%;
+    margin-bottom: 2em;
   }
   .card h1 {
     font-size: 2em;
   }
   .card p {
     padding: 0;
+  }
+
+  #syntaksi {
+    display: none;
+  }
+
+  #syntaksi-solo img {
+    width: 130%;
+  }
+}
+@media screen and (max-width: 440px) {
+  #volunteer-text {
+    padding: 2em 0.5em 2em 0.5em;
   }
 }
 footer {
